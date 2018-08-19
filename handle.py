@@ -18,7 +18,7 @@ class Handle(object):
             token = 'tokenweilu' #请按照公众平台官网\基本配置中信息填写
             print("handle/GET func: signature: ,token ,echostr,timestamp,nonce",signature,token,echostr,timestamp,nonce)
 
-            check_signature(token, signature, timestamp, nonce):  # 检查验证请求的签名
+            check_signature(token, signature, timestamp, nonce)  # 检查验证请求的签名
             return echostr
         except InvalidSignatureException as Argument:
             return Argument
